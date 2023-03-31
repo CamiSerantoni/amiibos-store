@@ -9,7 +9,7 @@ const Products = () => {
   const dispatch = useDispatch();
   const { amiibos = [] } = useSelector((state) => state.amiibos);
 
-  console.log(amiibos)
+ 
 
   useEffect(() => {
     dispatch(getAmiibos());

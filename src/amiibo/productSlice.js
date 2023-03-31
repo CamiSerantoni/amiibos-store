@@ -31,7 +31,7 @@ export const productSlice = createSlice({
       const products = state.products;
       let precioTotal = state.precioTotal;
       precioTotal = precioTotal - products[action.payload.id].price;
-      if (products[action.payload.id].cantidad != 1) {
+      if (products[action.payload.id].cantidad !== 1) {
         products[action.payload.id].cantidad =
           products[action.payload.id].cantidad - 1;
       } else {

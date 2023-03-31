@@ -23,7 +23,7 @@ const CartElements = () => {
           <div>
             <div className="cartContent">
               <div className="card-body">
-                <img src={products[element].image} />
+                <img alt="imagen de elemento en carrito"  src={products[element].image} />
                 <h3> {products[element].name}</h3>
                 <h4>Precio: ${products[element].price}</h4>
                 <button
