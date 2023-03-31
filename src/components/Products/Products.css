@@ -1,0 +1,175 @@
+
+
+  .product-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card {
+    text-align: center;
+    width: 21%;
+    padding: 1rem;
+    margin-left: 8%;
+    display: inline-flex;
+  }
+
+  .card__content {
+    display: flex;
+    flex-direction: inherit;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    align-items: center;
+  }
+
+  .card__content img {
+    object-fit: contain;
+    max-width: 50% ;
+  }
+
+  .card-button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #1a970f;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 5%;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+  }
+
+  .card-button-quitar {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #E60012;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+  }
+
+
+ 
+
+  .quanty-item {
+    margin: 0%;
+  }
+
+
+
+  .card-button:hover {
+    opacity: 0, 7;
+  }
+
+  .disabled {
+    opacity: .65;
+    pointer-events: none;
+  }
+
+
+
+  .card-title {
+    margin: 5px;
+  }
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+
+  .product-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .card {
+    width: 92%;
+    flex: 0 0 auto;
+    padding: 0 1rem;
+    margin: 0rem;
+    margin-top: 1rem;
+  }
+
+  .card__content {
+    display: flex;
+    flex-direction: inherit;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    align-items: center;
+  }
+
+  .card__content img {
+    object-fit: contain;
+    max-width: 50% ;
+  }
+
+  .card-button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #1a970f;
+    text-align: center;
+    cursor: pointer;
+    /* width: 100%; */
+    font-size: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  .card-button:hover {
+    opacity: 0, 7;
+  }
+
+
+
+  /* .tooltip {
+    position: relative;
+    display: inline-block;
+    border: none;
+  } */
+/* 
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+ 
+  
+
+  .noStock-item {
+    color: red;
+    font-weight: 500;
+    margin: auto;
+  }
+
+  .card-title {
+    margin: 5px;
+  }
+}

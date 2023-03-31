@@ -1,0 +1,36 @@
+.cardTotal {
+    border: solid black 1px;
+    margin: 3%;
+}
+
+.back-container {
+    margin-left: 1rem;
+    width: 25%;
+}
+
+.back-cart {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #970F6A;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 575.98px) {
+
+    .cardTotal {
+        border: solid black 1px;
+        margin: 3%;
+    }
+
+
+}

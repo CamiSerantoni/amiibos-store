@@ -1,70 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Proyecto: Gestión de carrito de compras - Amiib⭐'s Store
 
-In the project directory, you can run:
+## Descripcion de la solución
+## ¿Qué hace el proyecto? 
+ 
+ Amiibo's store es una tienda, amiga o colaboradora de la Nintendo store que le permite a los usuarios/as revisar el listado completo de Amiibos disponibles 
+ en nuestra base de productos y así como  agregar sus Amiibos favoritos a un carrito de compras. Existe un mini carrito que incluye un resumen del mismo y el detalle del carrito completo, permitiendole al usuario en todo momento las opciones de limpiar el carrito, que elimina los productos seleccionados, o por otro lado la opción de seguir comprando. que te devuelve a la vista general de la selección de Amiibos disponibles. 
 
-### `npm start`
+ El flujo completo de Amiibo's Store esta inspirado en los colores de Nintendo así como el personaje de Super Mario, de modo que los usuarios de la misma se sientan cómodos con una interfaz que simule un video juego. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalación del Proyecto: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+para poder instalar y hacer correr el proyecto en nuestro local es necesario: 
 
-### `npm test`
+- clonar 
+- abrir  
+- iniciar con el comando: `npm install` en la carpeta raíz para instalar las dependencias necesarias 
+- uso del comando: `npm start` para dar inicio al mismo y visualizarlo en el navegador de preferencia
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dependencias:  
 
-### `npm run build`
+Las dependencias o librerías utilizadas son: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Axios 
+- react-router-dom 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Las que se pueden observar en la siguiente imagen: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![imagen general de la web ](./src/assetsProject//dependenciesProject.png) 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Rutas: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Respecto al manejo de las rutas este se realizó con la librería `react-router` y las rutas a las que se puede acceder son: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- una ruta inicial o Home ("/")
+- ruta carrito de compras ("/carrito")
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+observación: el mini carrito es desplegable, por lo cual es posible acceder a el desde el home o desde el carrito checkout, debido a que este nace en el componente navbar pudiendo visualizarse con un hover sobre el carrito. 
 
-## Learn More
+## Consultas a API: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+La api consultada es: https://amiiboapi.com/api/amiibo/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para la realización de consultas de productos se realiza con `Axios`, esto se realiza de manera centralizada con el uso de `Redux`, más detalles se describen continuación. 
+## Manejo del estado: 
 
-### Code Splitting
+Considerando las caracteristicas del desafío así como el manejo de la data necesaria para el desarrollo del proyecto, se hizo uso de la librería `redux` lo que se justifica al considerar que en un proyecto de eCommerce, la gestión del estado de la aplicación puede ser especialmente compleja debido a la gran cantidad de información que se debe manejar. Al utilizar Redux, se pueden aprovechar las ventajas de esta biblioteca para simplificar y organizar la gestión del estado de la aplicación, dentro de las razones que lo justifican además se encuentra que:  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ Potencia el manejo del carrito de compras, que es un componente crítico en una tienda en línea y su estado debe ser gestionado de forma efectiva. Al utilizar Redux, se puede almacenar el estado del carrito de compras en el store y actualizarlo de forma consistente en toda la aplicación.
 
-### Analyzing the Bundle Size
+## Estilos: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Toda el desafío fue desarrollado solo a partir de hojas de estilo en cascada `Css`, sin uso de frameworks. 
 
-### Making a Progressive Web App
+## Visualización
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- De forma general, se logra visualizar de la siguiente manera:
 
-### Advanced Configuration
+![imagen general de la web ](./src/assetsProject/vistaGeneral.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- El mini carrito se puede apreciar:
 
-### Deployment
+![vista de mini carrito ](./src/assetsProject/vistaMiniCarrito.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Finalmente, el carrito se puede observar con la siguiente imagen adjunta:
 
-### `npm run build` fails to minify
+![vista carrito detalles ](./src/assetsProject/carritoFinalizarCompra.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Camila Serantoni R. 
+
+

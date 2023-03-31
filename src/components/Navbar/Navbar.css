@@ -1,0 +1,191 @@
+
+.nav{
+    display: flex; 
+}
+
+.amiiboTitle{
+    margin-right: 2%;
+}
+
+.ninLogo{
+    width: 15%;
+    margin: -5px;
+
+}
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #E60012;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+.seeCarrito {
+    font-size: 20px;
+    margin: 4vh;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navStyles {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 2vh;
+    margin-top: auto;
+}
+
+.cart{
+    width: 39px;
+    height: 38px;
+ 
+}
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: 8rem;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+    min-width: 290px;
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+
+.cantidad-container{
+display: flex;
+justify-content: space-around;
+margin: 5%;
+}
+
+.miniCartContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.miniCartCaracter{
+    text-align: center;
+}
+
+.miniCartTitle {
+margin: 5px ;
+}
+
+.miniCartSubTitle {
+    margin: 10px ;
+    }
+
+.card-button-agregar-MiniCarrito {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #1a970f;
+    text-align: center;
+    cursor: pointer;
+    /* margin-left: 5%; */
+    font-weight: bolder;
+    font-size: 15px;
+    /* margin-top: 13px;
+    margin-bottom: 6px; */
+    border-radius: 5px;
+  }
+
+  .card-button-quitar-MiniCarrito {
+        border: none;
+        outline: 0;
+        padding: 10px;
+        color: aliceblue;
+        background-color: #E60012;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: 15px;
+        /* margin-top: 5px;
+        margin-bottom: 15px; */
+        border-radius: 5px;
+    
+      
+  }
+
+  .accionesMiniCarrito{
+    display: flex;
+    justify-content: space-around;
+  }
+
+@media (max-width: 575.98px) {
+
+    .miniCartTitle {
+        margin: 5px ;
+        font-size: 17px;
+        }
+
+    .cart-products{
+        position: absolute!important;
+        top: 82px;
+        right: 3rem;
+        background-color: #fff;
+        padding: 0 18px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+        display: none;
+        min-width: 290px;
+    }
+
+    .nav-container {
+        position: sticky;
+        z-index: 3;
+        top: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 12vh;
+        background-color: #E60012;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+
+
+    .seeCarrito {
+        font-size: 15px;
+        margin: 4vh;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navStyles {
+        list-style: none;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        margin: 2vh
+    }
+
+    
+
+
+}

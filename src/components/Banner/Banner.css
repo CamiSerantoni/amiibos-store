@@ -1,0 +1,59 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/others_2/amiibo_5/old/H3x1_amiibo_main.jpg");
+}
+
+.banner-container {
+  text-align: center;
+  padding: 15% 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 30px;
+  color: white;
+  opacity: 0.9;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575.98px) {
+  .banner {
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/others_2/amiibo_5/old/H3x1_amiibo_main.jpg");
+  }
+
+  .banner-container {
+    text-align: center;
+    padding: 10% 5%;
+  }
+
+  .banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bold;
+  }
+
+  .banner p {
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
