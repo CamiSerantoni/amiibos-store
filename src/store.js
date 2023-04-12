@@ -4,11 +4,16 @@ import {productSlice} from './amiibo/productSlice'
 import saveStateMiddleware from "./localMiddleware";
 
 
-const savedState = JSON.parse(localStorage.getItem('myApp'));
+let savedState = JSON.parse(localStorage.getItem('myApp'));
+if (savedState === null ) {
+  
+    savedState = {amiibos: {amiibos: []} }
+}
+
 export const store = configureStore({
     reducer:{
         amiibos: amiiboSlice.reducer,
-        products: productSlice.reducer,
+        products: productSlice.reducer
     },
     preloadedState: savedState,
     middleware: (getDefaultMiddleware) =>

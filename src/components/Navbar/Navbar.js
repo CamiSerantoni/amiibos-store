@@ -88,7 +88,7 @@ const Navbar = () => {
           </div>
 
           <h2 className="totalTitle">
-            Sub-Total: <strong class="price-total">{precioTotal} 💰</strong>
+            Sub-Total: <strong className="price-total">{precioTotal} 💰</strong>
           </h2>
 
           <div className="accionesMiniCarrito">
