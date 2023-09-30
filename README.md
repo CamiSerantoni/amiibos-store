@@ -69,6 +69,9 @@ Toda el desafío fue desarrollado solo a partir de hojas de estilo en cascada `C
 
 ![vista carrito detalles ](./src/assetsProject/carritoFinalizarCompra.png) 
 
+- Puedes visitar Amiibo's store directamente siguiendo el siguiente enlace:
+  https://amiibos-store.vercel.app/
+ 
 
 ### Camila Serantoni R. 
 
