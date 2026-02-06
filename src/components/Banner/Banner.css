@@ -2,29 +2,59 @@
   background-size: cover;
   background-position: center;
   height: 70vh;
+  margin: 0;
+  background-color: #111;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.55)),
     url("https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/others_2/amiibo_5/old/H3x1_amiibo_main.jpg");
 }
 
 .banner-container {
   text-align: center;
-  padding: 15% 0;
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-.banner h1 {
+.banner-logo {
+  width: 320px;
+  max-width: 80%;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.35));
+}
+
+.banner-title {
   margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  font-size: 62px;
-  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.35);
+  font-size: 46px;
+  font-weight: 800;
 }
 
-.banner p {
-  font-size: 30px;
-  color: white;
-  opacity: 0.9;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+.banner-subtitle {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.95;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.banner-cta {
+  margin-top: 8px;
+  background: #E60012;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(230, 0, 18, 0.35);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.banner-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(230, 0, 18, 0.45);
 }
 
 @media (max-width: 575.98px) {
@@ -33,7 +63,7 @@
     background-position: center;
     height: 40vh;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.55)),
       url("https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/others_2/amiibo_5/old/H3x1_amiibo_main.jpg");
   }
 
@@ -42,18 +72,15 @@
     padding: 10% 5%;
   }
 
-  .banner h1 {
-    margin: 0;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    font-size: 62px;
-    font-weight: bold;
+  .banner-logo {
+    width: 220px;
   }
 
-  .banner p {
-    font-size: 20px;
-    color: white;
-    opacity: 0.9;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .banner-subtitle {
+    font-size: 16px;
   }
 }

@@ -8,6 +8,10 @@ const Navbar = () => {
   const dispatch = useDispatch();
   let { precioTotal = 0 } = useSelector((state) => state.products);
   const { products = {} } = useSelector((state) => state.products);
+  const cartCount = Object.values(products).reduce(
+    (acc, item) => acc + (item?.cantidad || 0),
+    0
+  );
 
   const addToCart = (id, name, price, image) => {
     dispatch(addProduct({ id, name, price, image }));
@@ -107,6 +111,7 @@ const Navbar = () => {
             {" "}
             🛒
           </span>{" "}
+          {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
            Total en carrito: <span>{precioTotal} 💰</span>{" "}
         </div>
       </nav>
