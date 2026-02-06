@@ -1,91 +1,85 @@
-.cartContent {
+.cart-list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    gap: 16px;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 30px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+    border-radius: 12px;
     padding: 10px;
-    border: solid 1px black;
-    border-radius: 5px;
 }
 
-.cart-text {
-    margin: 1%;
-}
-
-.card-body {
-    text-align: center;
-}
-
-.cartContent p {
-    text-align: center;
-}
-
-
-.cartContent img {
-
+.cart-item-media img {
+    width: 100%;
+    max-width: 100px;
     object-fit: contain;
-    width: 20%;
-    margin: inherit;
-
 }
 
-.back-container {
-    margin-left: 1rem;
-    width: 15%;
+.cart-item-info h3 {
+    margin: 0 0 6px;
 }
 
-.cartTotal {
-    text-align: center;
+.cart-item-meta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #5a5a5a;
+    font-size: 14px;
 }
 
-.cart-message-center {
-    text-align: center;
-    margin-top: 40px;
+.cart-item-price {
+    font-weight: 800;
+    color: #111;
+}
 
+.cart-item-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.cart-item-actions .card-button,
+.cart-item-actions .card-button-quitar {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.cart-item-total {
+    text-align: right;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.cart-item-total strong {
+    display: block;
+    font-size: 18px;
+    color: #111;
 }
 
 @media (max-width: 575.98px) {
-    .cartContent {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 30px;
-        padding: 10px;
-        border: solid 1px black;
-        border-radius: 5px;
+    .cart-item {
+        grid-template-columns: 1fr;
+        text-align: left;
     }
 
-
-
-    .cartContent p {
-        text-align: center;
+    .cart-item-total {
+        text-align: left;
     }
-
-    .cartContent img {
-
-        object-fit: contain;
-        width: 100%;
-    }
-
-    .cartTotal {
-        text-align: center;
-    }
-
-    .card-body {
-        text-align: center;
-    }
-
-    .cart-message-center {
-        text-align: center;
-        margin-top: 40px;
-
-    }
-
-    .cart-text {
-        margin: 1%;
-    }
-
-
 }

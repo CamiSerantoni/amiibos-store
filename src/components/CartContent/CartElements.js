@@ -16,23 +16,33 @@ const CartElements = () => {
   };
 
   return (
-    <div>
+    <div className="cart-list">
       {Object.keys(products).map((element) => {
         return (
-          //
-          <div>
-            <div className="cartContent">
-              <div className="card-body">
-                <img alt="imagen de elemento en carrito"  src={products[element].image} />
-                <h3> {products[element].name}</h3>
-                <h4>Precio: ${products[element].price}</h4>
+          <div className="cart-item" key={products[element].id}>
+            <div className="cart-item-media">
+              <img
+                alt={products[element].name}
+                src={products[element].image}
+              />
+            </div>
+            <div className="cart-item-info">
+              <h3>{products[element].name}</h3>
+              <div className="cart-item-meta">
+                <span className="cart-item-price">
+                  ${products[element].price}
+                </span>
+                <span className="cart-item-qty">
+                  Cantidad: {products[element].cantidad}
+                </span>
+              </div>
+              <div className="cart-item-actions">
                 <button
                   className="card-button-quitar"
                   onClick={() => deleteCart(products[element].id)}
                 >
-                  Remover producto
+                  -
                 </button>
-                <h4>Cantidad: {products[element].cantidad}</h4>{" "}
                 <button
                   className="card-button"
                   onClick={() =>
@@ -40,13 +50,19 @@ const CartElements = () => {
                       products[element].id,
                       products[element].name,
                       products[element].price,
-                      products[element].image,
+                      products[element].image
                     )
                   }
                 >
-                  Agregar al carrito
+                  +
                 </button>
               </div>
+            </div>
+            <div className="cart-item-total">
+              <span>Total</span>
+              <strong>
+                ${products[element].price * products[element].cantidad}
+              </strong>
             </div>
           </div>
         );
