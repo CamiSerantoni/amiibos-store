@@ -18,43 +18,41 @@ const CartContent = () => {
   };
 
   return Object.keys(products).length > 0 ? (
-    <>
-      <h3 className="resume-cart"> Finalizar compra</h3>
-    
-    <div className="actionButtonsCart">
-         <button className="card-button-clean" onClick={() => deleteAll()}>
-        🧹Limpiar carrito
-      </button>
-
-
-<Link to={"/"}>
-          <button className="card-button-more">
-            {" "}
-          agrega más⭐ {" "}
+    <div className="cart-page">
+      <div className="cart-header">
+        <div>
+          <h3 className="resume-cart">Finalizar compra</h3>
+          <p className="cart-subtitle">
+            Revisa tus productos antes de continuar.
+          </p>
+        </div>
+        <div className="actionButtonsCart">
+          <button className="card-button-clean" onClick={() => deleteAll()}>
+            🧹 Limpiar carrito
           </button>
-        </Link>
-    </div>
- 
+          <Link to={"/"}>
+            <button className="card-button-more">Agrega más ⭐</button>
+          </Link>
+        </div>
+      </div>
+
       <CartElements />
 
-      
-      
       <CartTotal precioTotal={precioTotal} />
-    </>
+    </div>
   ) : (
-    <div div className="cart-message-center">
-      <h3> Tu carrito esta vacío </h3>
-      <p>¡Descubre todos los amiibo's que tenemos para ti!</p>
-      <div className="cart-container">
+    <div className="cart-empty">
+      <div className="cart-empty-card">
         <img
           className="cart-img"
           alt="carrito vacío"
           src="https://stonehouseathenry.ie/images/empty-cart.png"
         />
+        <h3>Tu carrito está vacío</h3>
+        <p>¡Descubre todos los Amiibos que tenemos para ti!</p>
         <Link to={"/"}>
           <button className="search-products">
-            {" "}
-            ⭐ Selecciona tu nuevo Amiibo{" "}
+            ⭐ Selecciona tu nuevo Amiibo
           </button>
         </Link>
       </div>
