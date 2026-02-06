@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addProduct, deleteProduct } from "../../amiibo/productSlice";
 import { removeAllCart } from "../../amiibo";
-import amiiboLogo from "../../assetsProject/toppng.com-amiibo-logo-1280x292.png";
+
 
 const Navbar = () => {
   const dispatch = useDispatch();
